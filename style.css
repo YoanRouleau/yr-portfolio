@@ -21,6 +21,16 @@ body {
   letter-spacing: 1px;
 }
 
+.transition-fade {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
 ::-webkit-scrollbar {
   width: 15px;
   height: 10px;

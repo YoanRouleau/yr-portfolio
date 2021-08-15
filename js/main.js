@@ -207,4 +207,24 @@ $( document ).ready(function() {
         radius: 50
     });
 
+
+    const swup = new Swup({
+        containers: ["#swup"],
+        cache: false,
+        animationSelector: '[class*="transition-"]',
+        linkSelector: 'a[href^="' + window.location.origin + '"]:not([data-no-swup]), a[href^="/"]:not([data-no-swup]), a[href^="#"]:not([data-no-swup])',
+    });
+    console.log(swup);
+    swup.on('contentReplaced', () => {
+        console.log("test");
+        // $('html').scrollTop(0);
+    });
+
+    swup.on('willReplaceContent', () => {
+        console.log("test");
+
+    });
+    
+    
+
 });
