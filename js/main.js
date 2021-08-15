@@ -209,6 +209,7 @@ $( document ).ready(function() {
         });
     }
 
+    init();
 
     const swup = new Swup({
         containers: ["#swup"],
